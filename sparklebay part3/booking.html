@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Mobile Car Wash in Johannesburg | SparkleBay</title>
+    <meta name="description" content="Book your SparkleBay mobile car wash online. Choose a service, pick a date and tell us your suburb — we confirm by email.">
+    <meta name="keywords" content="book car wash Johannesburg, mobile car wash booking, car valet booking">
+    <meta name="author" content="SparkleBay">
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#0b3552">
+    <link rel="canonical" href="https://sparklebay.netlify.app/booking.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:site_name" content="SparkleBay Mobile Car Wash">
+    <meta property="og:title" content="Book a Mobile Car Wash in Johannesburg | SparkleBay">
+    <meta property="og:description" content="Book your SparkleBay mobile car wash online. Choose a service, pick a date and tell us your suburb — we confirm by email.">
+    <meta property="og:url" content="https://sparklebay.netlify.app/booking.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=1200&q=60">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%BF%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Karla:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="part3.css?v=2">
+    
+    
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <p class="brand"><a href="home.html">SparkleBay</a></p>
+            <nav aria-label="Main">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="booking.html" aria-current="page">Book a Wash</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <section class="section--navy section text-center">
+            <div class="container">
+                <h1>Book a Wash</h1>
+                <p style="margin-inline:auto;">Fill out the form below to book your mobile car wash.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container split">
+                <div>
+                    <h2>Service Details</h2>
+                    <p>Please select the service you would like to book. Need help deciding? Visit our <a href="services.html">Services &amp; Pricing</a> page for full descriptions, or <a href="enquiry.html">ask for an estimate</a> first.</p>
+                    <p class="hint" data-price-hint aria-live="polite"></p>
+                    <img src="images/car-wash-technician-driveway.jpg" data-fallback="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1000&q=60" alt="A mobile car wash technician cleaning a vehicle in a driveway" width="700" height="467" loading="lazy" decoding="async" >
+                </div>
+                <div class="card">
+                    <h2>Booking Form</h2>
+                    <form id="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="post">
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                        <p class="hint">South African number, e.g. 082 123 4567</p>
+                    </div>
+                    <div class="form-row">
+                        <label for="service">Service</label>
+                        <select id="service" name="service" data-services required><option value="">Select a service</option></select>
+                    </div>
+                    <div class="form-row">
+                        <label for="area">Your suburb or area</label>
+                        <input type="text" id="area" name="area" autocomplete="address-level2" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Additional Notes</label>
+                        <textarea id="message" name="message" rows="4" maxlength="500"></textarea>
+                    </div>
+                    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="visually-hidden" aria-hidden="true">
+                    <input type="submit" value="Book Now">
+                    <div class="form-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <nav class="footer-nav" aria-label="Footer">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="booking.html">Book a Wash</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+            <a href="changelog.html">Changelog</a>
+        </nav>
+        <p>&copy; 2024&ndash;2026 SparkleBay Mobile Car Wash, Johannesburg. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:info@sparklebay.com">info@sparklebay.com</a></p>
+    </footer>
+    <script src="script.js?v=4" defer></script>
+</body>
+</html>

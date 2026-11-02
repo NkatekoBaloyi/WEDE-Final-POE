@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /images/raw/
+
+Sitemap: https://sparklebay.netlify.app/sitemap.xml
